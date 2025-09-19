@@ -3,10 +3,10 @@ name: CI
 on:
   workflow_dispatch:
     inputs:
-      environment:
-        type: environment
-        description: 'Select the deployment environment'
-        required: true
+      run_job1:
+        type: boolean
+        description: 'Run Job 2?'
+        default: true
       run_job2:
         type: boolean
         description: 'Run Job 2?'
