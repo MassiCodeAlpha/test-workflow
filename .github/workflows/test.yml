@@ -6,7 +6,11 @@ on:
       jobs_to_run:
         description: "Enter the jobs to run (comma separated). Options: job1, job2, job3"
         required: true
-        default: "job1"  # Change the default if needed
+        type: choice
+        options: 
+          - job1
+          - job2
+          - job3
 
 jobs:
   job1:
